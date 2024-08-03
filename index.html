@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="search" name="search-description" id="search" placeholder="search description ">
+    <table id="expense-table">
+        <thead id="expense-heading">
+            <tr id="heading-info">
+                <th>Serial No.</th>
+                <th id="expense-value-head" data-order="asc">Expense &#9658;</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Edit/Delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="expense-body">
+            
+        </tbody>
+    </table>
+    <div id="expense-container">
+        <input type="text" id="expense-input" placeholder="Expense">
+        <input type="text" id="expense-description" placeholder="Description">
+        <select name="category" id="expense-category">
+            <option value="food">food</option>
+            <option value="fuel">fuel</option>
+            <option value="chores and ration">chores and ration</option>
+            <option value="travel">travel</option>
+            <option value="movie">movie</option>
+            <option value="others">others</option>
+        </select> 
+        <button id="submit-button" class="submit-button">Add</button>
+    </div>
+</body>
+</html>
